@@ -7,3 +7,5 @@ from app.db import db
 @with_appcontext
 def create_database():
     db.create_all()
+
+#@click.command(name='create-log-folder')
