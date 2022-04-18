@@ -54,7 +54,7 @@ def create_app():
     app.logger.removeHandler(default_handler)
 
     # get root directory of project
-    #SK- below code creates the log file
+    #SK- below code creates the log files
     root = os.path.dirname(os.path.abspath(__file__))
     # set the name of the apps log folder to logs
     logdir = os.path.join(root, 'logs')
