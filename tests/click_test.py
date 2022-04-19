@@ -46,7 +46,7 @@ def test_create_log_errors():
 
 def test_create_log_myapp():
     # set the name of the apps log folder to logs
-    root = os.path.dirname(os.path.abspath(__file__))
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     # set the name of the apps log folder to logs
     logdir = os.path.join(root, '../app/logs', 'myapp.log')
     print(logdir)
@@ -55,7 +55,7 @@ def test_create_log_myapp():
 
 def test_create_log_sqlalchemy():
     # set the name of the apps log folder to logs
-    root = os.path.dirname(os.path.abspath(__file__))
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     # set the name of the apps log folder to logs
     logdir = os.path.join(root, '../app/logs', 'sqlalchemy.log')
     print(logdir)
