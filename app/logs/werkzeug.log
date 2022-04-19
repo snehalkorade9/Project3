@@ -1,0 +1,4 @@
+2022-04-19 21:24:34,602 [INFO] werkzeug: 172.27.0.1 - - [19/Apr/2022 21:24:34] "GET /about HTTP/1.1" 200 -
+2022-04-19 21:24:37,200 [INFO] werkzeug: 172.27.0.1 - - [19/Apr/2022 21:24:37] "GET / HTTP/1.1" 200 -
+2022-04-19 21:24:38,192 [INFO] werkzeug: 172.27.0.1 - - [19/Apr/2022 21:24:38] "GET /welcome HTTP/1.1" 200 -
+2022-04-19 21:39:45,172 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/click_test.py', reloading
