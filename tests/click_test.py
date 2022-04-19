@@ -61,6 +61,8 @@ def test_create_log_sqlalchemy():
     # make a directory if it doesn't exist
     assert os.path.exists(logdir) == True
 
+
+#Test werkzeug file creation
 def test_create_log_werkzeug():
     # set the name of the apps log folder to logs
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
