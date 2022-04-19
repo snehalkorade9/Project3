@@ -18,8 +18,9 @@ from app.error_handlers import error_handlers
 from app.logging_config import log_con
 from app.simple_pages import simple_pages
 
-login_manager = flask_login.LoginManager()
+from app.log_formatter import RequestFormatter
 
+login_manager = flask_login.LoginManager()
 
 def create_app():
     """Create and configure an instance of the Flask application."""

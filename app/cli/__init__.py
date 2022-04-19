@@ -2,13 +2,6 @@ import click
 from flask.cli import with_appcontext
 from app.db import db
 
-
-
-
-
-
-
-
 import os
 @click.command(name='create-db')
 @with_appcontext
@@ -33,3 +26,4 @@ def create_log_folder():
     # make a directory if it doesn't exist
     if not os.path.exists(logdir):
         os.mkdir(logdir)
+
