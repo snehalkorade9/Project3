@@ -10,8 +10,8 @@ runner = CliRunner()
 
 def test_create_log_folder():
     response = runner.invoke(create_log_folder, [])
-    root = os.path.dirname(os.path.abspath(__file__))
     assert response.exit_code == 0
+    root = os.path.dirname(os.path.abspath(__file__))
     # set the name of the apps log folder to logs
     logdir = os.path.join(root, '../app/logs')
     print(logdir)
@@ -28,7 +28,8 @@ def test_create_database():
     assert os.path.exists(dbdir) == True
 
 def test_create_log_flask():
-    # set the name of the apps log folder to logs
+    response = runner.invoke(create_log_folder, [])
+    assert response.exit_code == 0
     root = os.path.dirname(os.path.abspath(__file__))
     # set the name of the apps log folder to logs
     logdir = os.path.join(root, '../app/logs', 'flask.log')
