@@ -28,3 +28,5 @@ def create_log_folder():
     # make a directory if it doesn't exist
     if not os.path.exists(logdir):
         os.mkdir(logdir)
+
+
