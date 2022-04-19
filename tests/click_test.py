@@ -62,7 +62,7 @@ def test_create_log_sqlalchemy():
     assert os.path.exists(logdir) == True
 
 def test_create_log_werkzeug():
-    # set the name of the apps log folder to logs
+    # set the name of the apps log folder to logs file
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     # set the name of the apps log folder to logs
     logdir = os.path.join(root, './/app/logs', 'sqlalchemy.log')
